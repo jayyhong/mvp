@@ -1,13 +1,18 @@
-angular.module('app')
+var count = 0
 
+angular.module('app')
 .controller('appCtrl', function() {
-  var count = 0;
   this.message = "Flexing on that finger"
 
-  this.spaceBar = function() {
+})
+
+.config(function () {
+  angular.element(document).bind('keyup', function (e) {
+    if (e.keyCode === 32){
     count++
     console.log(count)
-  }
+    }
+  });
 })
 
 .directive('app', function() {
