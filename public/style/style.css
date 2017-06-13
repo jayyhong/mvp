@@ -18,3 +18,25 @@
 	font-size: 25px;
 	float: left
 }
+
+.panel {
+  margin-top: 40px
+}
+
+.btn {
+  margin-left: 4%;
+  width: 92%
+}
+
+.timer {
+  text-align: center;
+  font-size: 100px
+}
+
+.form-group {
+  margin-left: 5%
+}
+
+.counter {
+  margin-right: 22%
+}

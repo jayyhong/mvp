@@ -10,6 +10,6 @@ var Player = db.define('players', {
   }
 })
 
-Player.sync()
+Player.sync({force:true})
 
 module.exports = Player

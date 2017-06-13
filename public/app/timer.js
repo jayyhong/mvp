@@ -1,6 +1,6 @@
 angular.module('app')
 .controller('timerCtrl', function($scope, $timeout) {
-    $scope.counter = 0;
+    $scope.counter = 1000;
 		$scope.start = false;
 
 		$scope.toggleStart = () => {
@@ -9,9 +9,14 @@ angular.module('app')
 
     $scope.onTimeout = function(){
 				if ($scope.start === true){
-        $scope.counter++;
-				}
+        $scope.counter--;
+				} 
         mytimeout = $timeout($scope.onTimeout,10);
+
+        if ($scope.counter === 0) {
+          $scope.stop()
+        }
+
     }
     
     var mytimeout = $timeout($scope.onTimeout,10);
@@ -20,3 +25,13 @@ angular.module('app')
         $timeout.cancel(mytimeout);
     }
 })
+
+// .directive('timer', function() {
+//   return {
+//     scope: {},
+//     controller: 'timerCtrl',
+//     controllerAs: 'timer',
+//     bindToController: true,
+//     templateUrl: "../app/timerTemplate.html"
+//   }
+// })

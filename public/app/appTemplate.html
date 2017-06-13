@@ -1,15 +1,14 @@
 <div class="container-fluid">
   <div class="jumbotron">
   <username></username>
-  <h1 class= "title">{{ctrl.message}}</h1>
+  <h1 class= "title">{{ctrl.playerInput}}</h1>
   <div class= "counter">{{ctrl.count}}</div>
-  <!--<button class = "btn" ng-click="ctrl.button()">+1</button>-->
   <hr class="my-4">
+  <!--timer controller-->
   <div ng-controller="timerCtrl">
-  <h1>Time: {{counter}}</h1>
-    <!--<button ng-click="stop()">Stop</button>-->
-    <!--<button class="btn btn-info" ng-click="toggleStart()">Start</button>-->
+      <div class= 'timer'>{{counter}}</div>
   <button class = "btn btn-info" ng-click="ctrl.toggleFilter() || ctrl.spaceBar() || toggleStart()" ng-hide="ctrl.toggle">Start</button>
   </div>
+  <record-library players = "ctrl.players">Players</record-library>
   </div>
 </div>

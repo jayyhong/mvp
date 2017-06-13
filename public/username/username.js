@@ -1,5 +1,10 @@
 angular.module('app')
-.controller('usernameCtrl', function(){
+.controller('usernameCtrl', function(http, service){
+  this.playerInput = {}
+
+  this.submit = (data) => {
+    http.addPlayer(data);
+  }
 
 })
 

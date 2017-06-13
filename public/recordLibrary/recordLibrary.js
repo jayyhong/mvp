@@ -5,7 +5,9 @@ angular.module('app')
 
 .directive('recordLibrary', function() {
   return {
-    scope: {},
+    scope: {
+      players: '<',
+    },
 		controller: 'recordLibraryCtrl',
 		controllerAs: 'ctrl',
 		bindToController: true,
