@@ -1,12 +1,12 @@
 var Sequelize = require('sequelize')
-var db = require('../config')
+var db = require('../configuration')
 
 var Player = db.define('players', {
   name: {
     type: Sequelize.STRING
   },
-  time: {
-		type: Sequelize.INTEGER
+  score: {
+    type: Sequelize.STRING
   }
 })
 

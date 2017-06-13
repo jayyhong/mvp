@@ -16,10 +16,11 @@ module.exports = {
 	addPlayer: function(req, res) {
 		console.log(req.body)
 		Player.create({
-			name: req.body.name
+			name: req.body.name,
+      score: req.body.score
 		})
-		.then(function(name) {
-			res.status(201).send(name);
+		.then(function(data) {
+			res.status(201).send(data);
 		})
 		.catch(function(err) {
 			console.log('err')
