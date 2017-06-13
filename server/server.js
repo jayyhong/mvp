@@ -6,6 +6,9 @@ var router = require('./router/router')
 var app = express()
 
 app.use(express.static('./public'))
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
+app.use('/api', router)
 
 app.listen(8000, function(err) {
   if (err) {
