@@ -1,50 +1,37 @@
 
 angular.module('app')
-.controller('appCtrl', function($timeout) {
+.controller('appCtrl', function($timeout, service) {
 
   this.count = 0;
 
-  this.message = "Test"
+  this.message = ""
   
   this.toggle = false;
-  this.toggleFilter = function() {
+  this.toggleFilter =()=> {
     this.toggle = true;
   }
 
-  this.button = function() {
+  this.button = () =>{
     this.count++
   }
 
-  this.spaceBar = function() {
-    angular.element(document).bind('keyup', function (e) {
+  this.spaceBar = ()=> {
+    angular.element(document).bind('keyup', (e) => {
       if (e.keyCode === 32){
         service.addCount();
-        console.log(service.count)
+        this.count = service.count;
       }
     });
-  }
-
-//timer
-  this.counter = 0;
-
-  this.onTimeout = function() {
-    this.counter ++
-    mytimeout = $timeout(this.onTimeout, 1000);
-  }
-  var mytimeout = $timeout(this.onTimeout,1000);
-
-  this.stop = function() {
-    $timeout.cancel(mytimeout)
   }
 
 })
 
 
-// .config(function () {
+// .run(function (service) {
 //   angular.element(document).bind('keyup', function (e) {
 //     if (e.keyCode === 32){
-//     count++
-//     console.log(count)
+//     service.addCount++
+//     this.count = service.count;
 //     }
 //   });
 // })

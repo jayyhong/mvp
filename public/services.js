@@ -1,12 +1,12 @@
 angular.module('app')
 
 	.service('service', function() {
-		var count = 0;
+		const count = 0;
 
-		return {
+		return { 
 			count: 0,
 			addCount: function() {
-				return count ++
+				return this.count ++
 			}
 		}
 	})
