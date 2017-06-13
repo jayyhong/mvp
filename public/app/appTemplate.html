@@ -4,11 +4,12 @@
   <h1 class= "title">{{ctrl.playerInput}}</h1>
   <div class= "counter">{{ctrl.count}}</div>
   <hr class="my-4">
-  <!--timer controller-->
-  <div ng-controller="timerCtrl">
-      <div class= 'timer'>{{counter}}</div>
+
+  <start-timer players="ctrl.players" space-bar = "ctrl.spaceBar"></start-timer>
+  <!--<div ng-controller = "timerCtrl">
+    <h1 class="timer">{{counter}}</h1>
   <button class = "btn btn-info" ng-click="ctrl.toggleFilter() || ctrl.spaceBar() || toggleStart()" ng-hide="ctrl.toggle">Start</button>
-  </div>
+  </div>-->
   <record-library players = "ctrl.players">Players</record-library>
-  </div>
+  <!--</div>-->
 </div>

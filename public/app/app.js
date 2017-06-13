@@ -7,17 +7,28 @@ angular.module('app')
 //array of player names and score
   this.players = [];
   
+  // this.toggleStart = () => {
+  //   this.start = true;
+  // }
+
 //will hide the start button
-  this.toggle = false;
-  this.toggleFilter =()=> {
-    this.toggle = true;
-  }
+
+  // this.toggle = false;
+  // this.toggleFilter =()=> {
+  //   this.toggle = true;
+  // }
+
 //will send an http request to get data from database
-  this.callPlayers = (data) => {
-    this.players = data;
-    console.log(this.players)
-  }
-  http.getPlayers(this.callPlayers);
+  // this.callPlayers = (data) => {
+  //   this.players = data;
+  //   console.log(this.players)
+  // }
+
+  http.getPlayers()
+    .then((results) => {
+      this.players = results
+    })
+
 
 //binds keyup spacebar onto the document through a service function
   this.spaceBar = ()=> {

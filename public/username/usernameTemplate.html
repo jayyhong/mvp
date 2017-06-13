@@ -1,5 +1,5 @@
 <div class = 'form-group'>
     <lable class = "usrinput"for="usr">Player:</label>
-    <input type="text" maxlength="12" placeholder="Name (12 char. max)" ng-model="ctrl.playerInput.name" class="form-control" id="usr">
+    <input type="text" maxlength="12" placeholder="Name (12 char. max)" ng-model="ctrl.playerInput.name" ng-keypress="keyCode = 13 && ctrl.submit(ctrl.playerInput)" class="form-control" id="usr">
     <!--<button class="btn-sm btn-info" ng-click="ctrl.submit(ctrl.playerInput)">{{ctrl.count}}</button>-->
 </div>

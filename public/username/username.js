@@ -3,8 +3,9 @@ angular.module('app')
   this.playerInput = {}
 
   this.submit = (data) => {
-    http.addPlayer(data);
+    service.name = data;
   }
+  
 
 })
 

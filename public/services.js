@@ -13,10 +13,10 @@ angular.module('app')
 	})
 
   .service('http', function($http){
-    this.getPlayers = function(callback){
-    $http.get('/api/players')
-    .then(function({data}) {
-      callback(data);
+    this.getPlayers = function(){
+    return $http.get('/api/players')
+    .then(function(results) {
+      return results.data;
     })
     .catch(function({data}){
       console.log('error')
@@ -24,7 +24,7 @@ angular.module('app')
   },
 
   this.addPlayer = function(data) {
-    $http.post('/api/players', data)
+    return $http.post('/api/players', data)
     .then((result) => {
       console.log(result)
     })
@@ -32,6 +32,8 @@ angular.module('app')
       console.log(err)
     })
   }
+
+  this.name = {}
   
 
   })
