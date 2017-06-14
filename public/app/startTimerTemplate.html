@@ -1,4 +1,6 @@
 <div class="startTimer">
-  <h1>{{ctrl.counter}}</h1>
-  <button class = "btn btn-info" ng-click="ctrl.toggleFilter() || ctrl.spaceBar() || ctrl.toggleStart()" ng-hide="ctrl.toggle">Start</button>
+  <div>{{ctrl.counter}}</div>
+  <button class = "btn btn-info" ng-click="ctrl.spaceBar() ; ctrl.toggleFilter(); ctrl.toggleFilter2()" ng-hide="ctrl.toggle">Start</button>
+  <button class = "btn btn-danger" ng-click="ctrl.toggleFilter(); ctrl.toggleFilter2()" ng-show="ctrl.toggle2">Replay</button>
+  <!--<button class = "btn btn-success" ng-click ="ctrl.submitscore">Submit Score</button>-->
 </div>

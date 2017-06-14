@@ -31,7 +31,16 @@ angular.module('app')
 
 
 //binds keyup spacebar onto the document through a service function
+this.activate = false;
+
+
   this.spaceBar = ()=> {
+    if (this.activate === false) {
+    this.activate = true;
+    }
+    if (this.actiavte === true) {
+      return
+    }
     angular.element(document).bind('keydown', (e) => {
       if (e.keyCode === 32){
         e.preventDefault();

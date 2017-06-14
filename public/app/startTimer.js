@@ -3,24 +3,52 @@ angular.module('app')
 
   //hide start button
   this.toggle = false;
+  this.toggle2 = false;
 
   this.toggleFilter =()=> {
+    if (this.toggle === false){
+      this.toggleStart()
     this.toggle = true;
+    } else {
+      this.toggle = false;
+    }
+  }
+
+  this.toggleFilter2 =() => {
+    if (this.toggle2 === false) {
+      this.toggle2 = true;
+    } else {
+      this.reset()
+      this.toggle2 = false;
+    }
   }
 
   //timer
     this.counter = 100;
 		this.start = false;
+    this.init = false;
 
 		this.toggleStart =() => {
+
 			this.start = true;
 		}
 
+    //reset timer
+    this.reset = () => {
+      this.start = false;
+      this.counter = 500
+      this.count = 0;
+      if (this.end = false) {
+      this.toggleStart()
+      }
+    }
 
     this.onTimeout =() => {
 				if (this.start === true){
         this.counter--;
-				} 
+				} else {
+          this.counter = 500
+        }
         mytimeout = $timeout(this.onTimeout,10);
 
         if (this.counter === 0) {
@@ -45,6 +73,7 @@ angular.module('app')
       console.log("service name", service.name)
 
     }
+    
 
 })
 
@@ -52,7 +81,8 @@ angular.module('app')
   return {
     scope: {
       players: '=',
-      spaceBar: '='
+      spaceBar: '=',
+      count: '='
     },
     controller: "startTimerCtrl",
     controllerAs: "ctrl",
