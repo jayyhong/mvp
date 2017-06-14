@@ -66,7 +66,46 @@ url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
 
 div.image {
   content: url(http://www.freeiconspng.com/uploads/rocket-ship-png-24.png);
-  width: 80px;
+  position: center;
+  width: 200px;
+  position: absolute
+  
+}
+
+div.image2 {
+  content: url(http://www.freeiconspng.com/uploads/rocket-ship-png-24.png);
+  position: center;
+  width: 400px;
+  position: absolute;
+
+  
+}
+
+div.image3 {
+  content: url(http://www.freeiconspng.com/uploads/rocket-ship-png-24.png);
+  position: center;
+  margin-left: 60%;
+  height: 60px;
+  width: 60px;
+  position: absolute
+  
+}
+
+div.image4 {
+  content: url(http://www.freeiconspng.com/uploads/rocket-ship-png-24.png);
+  position: center;
+  margin-left: 60%;
+  height: 900px;
+  width: 900px;
+  position: absolute
+  
+}
+
+div.image5 {
+  content: url(http://www.freeiconspng.com/uploads/rocket-ship-png-24.png);
+  position: center;
+  height: 50px;
+  width: 50px;
   position: absolute
   
 }
