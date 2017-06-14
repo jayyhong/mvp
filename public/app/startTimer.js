@@ -24,19 +24,17 @@ angular.module('app')
   }
 
   //timer
-    this.counter = 100;
+    this.counter = 1000;
 		this.start = false;
     this.init = false;
-
 		this.toggleStart =() => {
-
 			this.start = true;
 		}
 
     //reset timer
     this.reset = () => {
       this.start = false;
-      this.counter = 500
+      this.counter = 1000
       this.count = 0;
       if (this.end = false) {
       this.toggleStart()
@@ -47,7 +45,7 @@ angular.module('app')
 				if (this.start === true){
         this.counter--;
 				} else {
-          this.counter = 500
+          this.counter = 1000
         }
         mytimeout = $timeout(this.onTimeout,10);
 
