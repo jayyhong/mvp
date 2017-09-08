@@ -17,36 +17,14 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Flex your space bar ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-    This is a product that will test your reaction time againsts people of all ages.
+  > Press your space bar as fast as you can with the given amount of time. Try to own the highest score!
 
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-    Finger Flex is a simple one button game that will test your fingers strength and agility. The rule is simple. You have 2 seconds to press the spacebar as much as you can. Your score will be saved and compared with the world's greatest in the leaderboards.
-
-## Problem ##
-  > Describe the problem your product solves.
-    Depression. Boredness of the finger.
-
-## Solution ##
-  > Describe how your product elegantly solves the problem.
-    By testing your reaction time and flexing your finger, it will release serotonine in your brain that will destroy your depression and encourage inspirational thoughts of spiritual englightenment.
-
-## Quote from You ##
-  > A quote from a spokesperson in your company.
-    "The finger is the mightiest weapon"
+## Quote from Creator ##
+    "The space bar is the mightiest weapon"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-    Start with your fingers. Press the button as fast as you can.
+  > Insert your name, hit start, and hit that space bar as fast as you can!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-    "Because I played finger flex, I was able to get a girlfriend. Rob - age 75"
-
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
-    Go play finger flex now.
+    "Because I played spaced out, I was able to get a girlfriend. Rob - age 75"
